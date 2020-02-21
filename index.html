@@ -31,3 +31,12 @@ git remote add origin <リモートリポジトリのurl>
 
 [リモートリポジトリへ送信する]
 git push <リモート名> <ブランチ名>
+
+[ファイルへの変更を取り消す]
+git checkout -- <ファイル名>
+
+[ステージした変更を取り消す](ワークツリーには影響を与えない)
+git reset HEAD
+
+[直前のコミットをやり直す](リモートにpush済のものには適用できない)
+git commit --amend
